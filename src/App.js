@@ -6,7 +6,6 @@ import Home from './Pages/Home';
 import Productos from './Pages/Productos';
 import Api from './Pages/Api';
 import Otro from './Pages/Otro';
-import Navbar from './Componentes/Navbar';
 import Layout from './Componentes/Layout';
 
 
