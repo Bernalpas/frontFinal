@@ -43,19 +43,17 @@ const Formulario = () => {
             <h2>
                 Formulario Page
             </h2>
-            <Form>
-
                 {Object.keys(inputs).map((key, index) => (
-                <Form.Group className="mb-3" key={index}>
-                    <Form.Label id="form">
-                        {key}
-                    </Form.Label>
-                    <Form.Control 
-                        name={key}
-                        value={inputs[key]}
-                        onChange={handleChange}
-                    />
-                </Form.Group>
+                    <Form.Group className="mb-3" key={index}>
+                        <Form.Label id="form">
+                            {key}
+                        </Form.Label>
+                        <Form.Control 
+                            name={key}
+                            value={inputs[key]}
+                            onChange={handleChange}
+                        />
+                    </Form.Group>
                 ))}
 
                 <div className="text-center w-100">
@@ -63,7 +61,6 @@ const Formulario = () => {
                         Enviar Datos
                     </Button>
                 </div>
-            </Form>
         </div>
     )
 }
