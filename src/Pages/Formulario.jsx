@@ -29,7 +29,7 @@ const Formulario = () => {
 
     //función del post
     const handleClick = async () => {
-        await axios.post(URL,inputs)//enviamos datos
+        await axios.post(URL, inputs)//enviamos datos
         setInputs({//limpiamos los inputs
             nombre: "",
             apellido: "",
